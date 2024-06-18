@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718350205471' stop='1718350221263'>
+    <name>OrangeHRM Login</name>
+    <title>OrangeHRM Login</title>
+    <test-cases>
+        <test-case start='1718350205497' status='failed' stop='1718350212813'>
+            <name>Should display correct title and URL</name>
+            <title>Should display correct title and URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: expected 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' to equal '/'</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: expected 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login' to equal '/'
+                    at Context.eval (webpack://cypress_automation/./cypress/e2e/tests/login.spec.js:19:13)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1718350212856' status='passed' stop='1718350217863'>
+            <name>should successfully log in with valid credentials</name>
+            <title>should successfully log in with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1718350217894' status='passed' stop='1718350221263'>
+            <name>should not log in with invalid credentials</name>
+            <title>should not log in with invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

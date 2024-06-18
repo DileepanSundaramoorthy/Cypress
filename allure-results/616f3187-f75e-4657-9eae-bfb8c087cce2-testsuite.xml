@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718343855016' stop='1718343855301'>
+    <name>Select Month from Leave Calendar</name>
+    <title>Select Month from Leave Calendar</title>
+    <test-cases>
+        <test-case start='1718343855301' status='broken' stop='1718343855301'>
+            <name>"before all" hook for "Should select Jun from Leave Calendar"</name>
+            <title>"before all" hook for "Should select Jun from Leave Calendar"</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>A fixture file could not be found at any of the following paths:
+                
+                    > cypress\fixtures\liveUser
+                    > cypress\fixtures\liveUser.[ext]
+                
+                Cypress looked for these file extensions at the provided path:
+                
+                    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip
+                
+                Provide a path to an existing fixture file.
+                
+                Because this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Select Month from Leave Cal...`</message>
+                <stack-trace>Error: A fixture file could not be found at any of the following paths:
+                
+                    > cypress\fixtures\liveUser
+                    > cypress\fixtures\liveUser.[ext]
+                
+                Cypress looked for these file extensions at the provided path:
+                
+                    > .json, .js, .coffee, .html, .txt, .csv, .png, .jpg, .jpeg, .gif, .tif, .tiff, .zip
+                
+                Provide a path to an existing fixture file.
+                
+                Because this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Select Month from Leave Cal...`
+                    at Object.&lt;anonymous> (&lt;embedded>:4389:125783)
+                    at Object.tryCatcher (C:\Users\DileepanSM\AppData\Local\Cypress\Cache\13.11.0\Cypress\resources\app\node_modules\bluebird\js\release\util.js:16:23)
+                    at Promise._settlePromiseFromHandler (C:\Users\DileepanSM\AppData\Local\Cypress\Cache\13.11.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:512:31)
+                    at Promise._settlePromise (C:\Users\DileepanSM\AppData\Local\Cypress\Cache\13.11.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:569:18)
+                    at Promise._settlePromise0 (C:\Users\DileepanSM\AppData\Local\Cypress\Cache\13.11.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:614:10)
+                    at Promise._settlePromises (C:\Users\DileepanSM\AppData\Local\Cypress\Cache\13.11.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:694:18)
+                    at Promise._fulfill (C:\Users\DileepanSM\AppData\Local\Cypress\Cache\13.11.0\Cypress\resources\app\node_modules\bluebird\js\release\promise.js:638:18)
+                    at &lt;unknown> (C:\Users\DileepanSM\AppData\Local\Cypress\Cache\13.11.0\Cypress\resources\app\node_modules\bluebird\js\release\nodeback.js:42:21)
+                    at s (&lt;embedded>:1831:107155)
+                    at S.&lt;anonymous> (&lt;embedded>:4389:115573)
+                    at S.emit (node:events:514:28)
+                    at S._finish (&lt;embedded>:4389:116440)
+                    at a (&lt;embedded>:4389:115836)
+                    at S._processSimple2 (&lt;embedded>:4389:121597)
+                    at &lt;unknown> (&lt;embedded>:4389:121450)
+                    at S._stat2 (&lt;embedded>:4389:122515)
+                    at &lt;unknown> (&lt;embedded>:4389:122362)
+                    at s (&lt;embedded>:2739:19687)
+                    at s (&lt;embedded>:1831:107155)
+                    at r (&lt;embedded>:4505:13485)
+                    at FSReqCallback.oncomplete (node:fs:210:21)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,25 @@
+{
+  "name": "cypress_automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec 'cypress/e2e/**/*.js' --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "parallel": "npx cypress-parallel -s 'cypress/e2e/**/*.js' -t 4 -b chrome --reporter mocha-allure-reporter"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.29.0",
+    "allure-cypress": "^3.0.0-beta.3",
+    "cypress": "^13.11.0",
+    "cypress-parallel": "^0.14.0",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.4.0",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "dependencies": {
+    "cypress-failed-log": "^2.10.0"
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718185857052' stop='1718185871474'>
+    <name>Select Month from Leave Calendar</name>
+    <title>Select Month from Leave Calendar</title>
+    <test-cases>
+        <test-case start='1718185862934' status='passed' stop='1718185871474'>
+            <name>Should select Jun from Leave Calendar</name>
+            <title>Should select Jun from Leave Calendar</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
