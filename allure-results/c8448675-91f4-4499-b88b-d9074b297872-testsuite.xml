@@ -1,0 +1,49 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718705628199' stop='1718705642222'>
+    <name>Select Month from Leave Calendar</name>
+    <title>Select Month from Leave Calendar</title>
+    <test-cases>
+        <test-case start='1718705633937' status='broken' stop='1718705642144'>
+            <name>Should select Jun from Leave Calendar</name>
+            <title>Should select Jun from Leave Calendar</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Syntax error, unrecognized expression: //*[@class='oxd-calendar-selector-month-selected']</message>
+                <stack-trace>Error: Syntax error, unrecognized expression: //*[@class='oxd-calendar-selector-month-selected']
+                    at Sizzle.error (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:8470:8)
+                    at Sizzle.tokenize (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:9122:11)
+                    at Sizzle.select (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:9549:20)
+                    at Function.Sizzle [as find] (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:7774:9)
+                    at jQuery.fn.init.find (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:9805:11)
+                    at new jQuery.fn.init (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:9920:40)
+                    at Object.query (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:34703:10)
+                    at $Cy.$$ (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:139983:57)
+                    at &lt;unknown> (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:131864:18)
+                    at Object.subjectFn (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:143800:16)
+                    at $Cy.verifyUpcomingAssertions (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:143138:31)
+                    at onRetry (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:143791:15)
+                    at retryQuery (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:143804:10)
+                    at &lt;unknown> (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:143954:17)
+                    at tryCatcher (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:1807:23)
+                    at Promise._settlePromiseFromHandler (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:1519:31)
+                    at Promise._settlePromise (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:1576:18)
+                    at Promise._settlePromiseCtx (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:1613:10)
+                    at _drainQueueStep (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:2411:12)
+                    at _drainQueue (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:2400:9)
+                    at Async._drainQueues (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:2416:5)
+                    at Async.drainQueues (https://opensource-demo.orangehrmlive.com/__cypress/runner/cypress_runner.js:2286:14)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1718705642176' status='passed' stop='1718705642222'>
+            <name>Should add the Job Categorie and delete</name>
+            <title>Should add the Job Categorie and delete</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

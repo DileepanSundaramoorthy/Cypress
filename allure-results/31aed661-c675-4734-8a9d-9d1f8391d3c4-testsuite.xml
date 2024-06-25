@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718779042575' stop='1718779046037'>
+    <name>OrangeHRM Login</name>
+    <title>OrangeHRM Login</title>
+    <test-cases>
+        <test-case start='1718779042608' status='broken' stop='1718779046001'>
+            <name>should be verify branding image and logo</name>
+            <title>should be verify branding image and logo</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>brandImg is not defined</message>
+                <stack-trace>ReferenceError: brandImg is not defined
+                    at Context.eval (webpack://cypress_automation/./cypress/e2e/tests/login.cy.js:41:11)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

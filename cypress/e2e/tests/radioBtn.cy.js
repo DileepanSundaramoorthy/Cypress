@@ -39,9 +39,16 @@ describe ("check UI Elements",()=>{
 
 
    })
+   it.only('mouse hover',()=>{
+    cy.visit("https://www.flipkart.com/");
+    cy.get("img.-dOa_b.XdYXbi").trigger("mouseover");
+    cy.wait(5000);
+    cy.get('.qstlfY').should('have.length', 6);
+
+   })
 
 
-   it.only ('auto suggests dropdown',()=>{
+   it('auto suggests dropdown',()=>{
 
     cy.visit("https://www.flipkart.com/")
     cy.get("input.Pke_EE").type('cypress')

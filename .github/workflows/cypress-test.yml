@@ -10,7 +10,37 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Cypress run
-        uses: cypress-io/github-action@v5
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16' # Specify the Node.js version compatible with your project
 
-        
+      - name: Install dependencies
+        run: npm install
+
+      - name: Cypress run
+        run: npm run cypress:run
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          CYPRESS_ENV: live # Replace with the desired environment
+
+      - name: Archive Cypress results
+        if: always() # Ensure this step runs even if previous steps fail
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-results
+          path: allure-results # Ensure this directory matches the Allure results directory
+
+      - name: Send email with results
+        if: always() # Ensure this step runs even if previous steps fail
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.example.com
+          server_port: 587
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: Cypress Test Results
+          body: 'The Cypress test results are attached.'
+          to: dileepan.sundaramoorthy@qtsolv.com
+          from: dileepan.sm@gmail.com
+          attachments: allure-results # Ensure this directory matches the Allure results directory
