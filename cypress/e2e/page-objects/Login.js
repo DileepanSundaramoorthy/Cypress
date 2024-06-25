@@ -4,6 +4,8 @@ class Login {
     btnSubmit = "button[type='submit']";
     headermsg = ".oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module";
     alertmsg = ".oxd-text.oxd-text--p.oxd-alert-content-text";
+    brandImg =".orangehrm-login-branding>img";
+    oringeLogo =".orangehrm-login-logo>img";
   
     setUserName(username) {
         cy.get(this.txtUserName).type(username);
@@ -30,6 +32,7 @@ class Login {
     getAlertMsg() {
         return cy.get(this.alertmsg);
     }
+
   }
   
   export default Login;

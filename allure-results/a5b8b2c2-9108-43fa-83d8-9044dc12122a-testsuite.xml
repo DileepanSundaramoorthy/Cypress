@@ -1,0 +1,80 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718779102343' stop='1718779105781'>
+    <name>OrangeHRM Login</name>
+    <title>OrangeHRM Login</title>
+    <test-cases>
+        <test-case start='1718779102377' status='pending' stop='1718779102377'>
+            <name>Should display correct title and URL</name>
+            <title>Should display correct title and URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1718779102377' status='undefined'>
+            <name>Should display correct title and URL</name>
+            <title>Should display correct title and URL</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1718779102377' status='pending' stop='1718779102377'>
+            <name>should successfully log in with valid credentials</name>
+            <title>should successfully log in with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1718779102377' status='undefined'>
+            <name>should successfully log in with valid credentials</name>
+            <title>should successfully log in with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1718779102377' status='pending' stop='1718779102377'>
+            <name>should not log in with invalid credentials</name>
+            <title>should not log in with invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Test ignored</message>
+                <stack-trace>undefined</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1718779102378' status='undefined'>
+            <name>should not log in with invalid credentials</name>
+            <title>should not log in with invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1718779102378' status='broken' stop='1718779105760'>
+            <name>should be verify branding image and logo</name>
+            <title>should be verify branding image and logo</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>brandImg is not defined</message>
+                <stack-trace>ReferenceError: brandImg is not defined
+                    at Context.eval (webpack://cypress_automation/./cypress/e2e/tests/login.cy.js:41:11)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

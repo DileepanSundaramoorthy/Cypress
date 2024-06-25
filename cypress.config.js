@@ -2,7 +2,6 @@ const { defineConfig } = require("cypress");
 const fs = require('fs');
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
-// Define the environment variable name
 const CYPRESS_ENV = 'CYPRESS_ENV';
 
 function getConfigurationByFile(file) {
@@ -19,26 +18,22 @@ module.exports = defineConfig({
   reporterOptions: {
     reporterEnabled: 'mocha-allure-reporter',
     mochaAllureReporterOptions: {
-      resultsDir: 'allure-results', // Ensure this directory exists
-      includeScreenshots: true,     // Enable screenshots in the report
+      resultsDir: 'allure-results',
+      includeScreenshots: true,
     }
   },
   e2e: {
     specPattern: 'cypress/e2e/tests/**/*.cy.js',
     setupNodeEvents(on, config) {
-      allureWriter(on, config); // Set up Allure writer
+      allureWriter(on, config);
 
-      // Get environment from environment variable or use 'live' as default
       const environment = process.env[CYPRESS_ENV] || 'live';
       console.log(`Running tests in ${environment} environment`);
 
-      // Load environment-specific configuration
       const environmentConfig = getConfigurationByFile(environment);
 
-      // Set Chrome as the default browser
       config.browser = 'chrome';
 
-      // Handle before:browser:launch event
       on('before:browser:launch', (browser = {}, launchOptions) => {
         if (browser.family === 'chrome' && browser.name !== 'electron') {
           launchOptions.args.push("--incognito");
@@ -46,12 +41,11 @@ module.exports = defineConfig({
         return launchOptions;
       });
 
-      // Return the merged configuration
       return { ...config, ...environmentConfig };
     },
   },
   env: {
-    allure: true, // Ensure Allure is enabled in the environment
+    allure: true,
   },
   screenshotsFolder: 'cypress/screenshots',
   videosFolder: 'cypress/videos',

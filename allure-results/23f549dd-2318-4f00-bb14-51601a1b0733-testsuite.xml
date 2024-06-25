@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1718782864167' stop='1718782865127'>
+    <name>HTTP Request</name>
+    <title>HTTP Request</title>
+    <test-cases>
+        <test-case start='1718782864167' status='passed' stop='1718782864823'>
+            <name>Get call</name>
+            <title>Get call</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1718782864834' status='broken' stop='1718782865126'>
+            <name>post call</name>
+            <title>post call</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>{(intermediate value)(intermediate value)(intermediate value)}.its is not a function</message>
+                <stack-trace>TypeError: {(intermediate value)(intermediate value)(intermediate value)}.its is not a function
+                    at Context.eval (webpack://cypress_automation/./cypress/e2e/tests/api/APITest.cy.js:19:10)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
